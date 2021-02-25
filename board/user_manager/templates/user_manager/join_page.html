@@ -1,0 +1,32 @@
+{% extends 'post_service/base.html' %}
+{% block title %}로그인{% endblock %}
+
+{% block contents %}
+    <form action="" method="POST">
+        {% csrf_token %}
+        <div class="form_wrapper">
+            <div class="input_form">
+                <label for="{{ join_form.id.id_for_label }}">
+                    {{ join_form.id.label }}
+                </label>
+                {{ join_form.id }}
+            </div>
+            <div class="input_form">
+                <label for="{{ join_form.password.password_for_label }}">
+                    {{ join_form.password.label }}
+                </label>
+                {{ join_form.password }}
+            </div>
+            <div class="input_form">
+                <label for="{{ join_form.password_check.password_check_for_label }}">
+                    {{ join_form.password_check.label }}
+                </label>
+                {{ join_form.password_check }}
+            </div>
+        </div>
+        <div class="input_form">
+
+        </div>
+        <input type="submit" value="회원가입">
+    </form>
+{% endblock %}

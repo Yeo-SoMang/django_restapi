@@ -1,0 +1,11 @@
+{% extends 'post_service/base.html' %}
+{% block title %}로그인{% endblock %}
+
+{% block contents %}
+    <form action="validate/" method="POST">
+        {% csrf_token %}
+        {{ login_form }}
+
+        <input type="submit" value="로그인">
+    </form>
+{% endblock %}
