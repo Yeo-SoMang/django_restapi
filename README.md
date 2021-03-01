@@ -1,5 +1,5 @@
 # django_restapi
-Django를 사용한 RESTAPI
+Django를 사용한 REST API
 
 ## board_rest_api_test
   - django restframework를 이용하여 만든 blog
