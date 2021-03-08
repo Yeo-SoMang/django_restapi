@@ -7,4 +7,4 @@ Django를 사용한 REST API
   - post_all(/board/), post_detail(/board/<int:pk>)
   
 ## rest
-  - 기본적인 rest api test.
+  - 기본적인 rest api test
